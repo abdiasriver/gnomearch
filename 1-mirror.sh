@@ -92,7 +92,8 @@ sudo pacman -S --noconfirm --needed gnome-shell-extensions mutter xdg-user-dirs-
 
 # installation of zippers and unzippers
 sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  arj cabextract file-roller
-sudo pacman -S --noconfirm --needed ipw2100-fw ipw2200-fw intel-ucode intel-tbb wayland wayland-protocols glfw-wayland qt5-wayland xorg-server-xwayland wlc 
+sudo pacman -S --noconfirm --needed ipw2100-fw ipw2200-fw intel-ucode intel-tbb 
+#sudo pacman -S --noconfirm --needed wayland wayland-protocols glfw-wayland qt5-wayland xorg-server-xwayland wlc 
 
 
 
