@@ -77,7 +77,7 @@ echo "###############################  INSTALADO PACAUR ########################
 echo " Xserver setup"
 
 sudo pacman -S xorg-server xorg-apps xorg-xinit --noconfirm --needed
-sudo pacman -S xf86-video-intel --noconfirm --needed
+sudo pacman -S xf86-video-intel ipw2100-fw ipw2200-fw intel-ucode intel-tbb libinput xf86-input-keyboard libva-intel-driver libva-vdpau-driver mesa mesa-vdpau --noconfirm --needed
 
 echo "################################################################"
 echo "###################    xorg installed     ######################"
@@ -87,20 +87,18 @@ echo "###################    SOFTWARE NEEDED    ######################"
 
 sudo pacman -S --noconfirm --needed gnome-shell gnome-font-viewer gnome-screenshot gnome-system-monitor termite gnome-tweak-tool 
  
-sudo pacman -S --noconfirm --needed gnome-shell-extensions mutter xdg-user-dirs-gtk gnome-photos btrfs-progs awesome-terminal-fonts
+sudo pacman -S --noconfirm --needed gnome-shell-extensions mutter xdg-user-dirs-gtk gnome-photos btrfs-progs awesome-terminal-fonts exfat-utils
 ###############################################################################################
 
 # installation of zippers and unzippers
 sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  arj cabextract file-roller
-sudo pacman -S --noconfirm --needed ipw2100-fw ipw2200-fw intel-ucode intel-tbb 
 #sudo pacman -S --noconfirm --needed wayland wayland-protocols glfw-wayland qt5-wayland xorg-server-xwayland wlc 
 
 
 
 sudo pacman -S --noconfirm --needed alsa-utils gstreamer phonon-qt5-gstreamer gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly flashplugin
 ###############################################################################################
-
-sudo pacman -S --noconfirm exfat-utils libinput xf86-input-keyboard libva-intel-driver libva-vdpau-driver mesa mesa-vdpau
+ 
 echo "################################################################"
 echo "###################    core software installed  ################"
 echo "################################################################"
